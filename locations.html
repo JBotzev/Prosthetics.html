@@ -1,0 +1,369 @@
+<html>
+	<link href="locations.css" rel="stylesheet" type="text/css">
+	<script src="prosthetics.js"></script>
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>ProsthesisBG</title>
+	</head>
+	
+	<body id="body" onload="hey()">
+		<header>
+			<img id="nex" src="header.png"></img>
+			
+			<div id="login">
+				<ul id="log">
+					<li><a href="login.html"><strong>Sign In</strong></a></li>
+					<li><a  style="border-left:solid; border-color:#808080; border-width:1px" onclick="btn_reghome()"><strong>Register</strong></a></li>
+				</ul>
+			</div>
+			<nav>
+			<div style="margin-top:5px"><a id="title" href="ProstheticBG.html"><strong>ProsthesisBG</strong></a></div>
+			<strong><ul>
+				<li><a href="profile.html">PROFILE</a></li>
+				<li><a href="Prosthetics.html">PROSTHESIS</a></li>
+				<li><a href="gallery.html">STORIES</a></li>
+				<li><a href="information.html">INFORMATION</a></li>
+				<li  onmouseenter="droplista()" onmouseleave="droplistb()"><a href="contacts.html" id="cid">CONTACTS</a>
+					<div id="droplist">
+						<a href="locations.html">Our Team</a>
+						<a href="locations.html">Locations</a>
+						<a href="locations.html">Social Media</a>
+					</div>
+				</li>
+				<form action="/search" id="search-form" method="get" style="display: inline;">
+					<table style="margin-left:68px; margin-top:-2px;" cellspacing="0">
+						<tbody>
+							<tr>
+								<td class="search-box">
+									<input id="search-box" name="q" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" type="text" value="Search..." style="color:#808080; border:solid 1px #46C3E3; padding:2px;">
+								</td>
+								<td class="search-button"><input id="search-button" type="submit" value="Search" style="padding:2px; background-color:#46C3E3;border:1px solid #46C3E3; margin-left:-2px;cursor:pointer;width:70px">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</ul></strong>
+		</nav>
+		</header>
+		
+		
+		<main>
+		<img src="World Map.png" id="map">
+		<div id="America" onclick="americaT()">
+			America
+		</div>
+		<div id="Europe" onclick="europeT()">
+			Europe
+		</div>
+		<div id="Africa" onclick="africaT()">
+			Africa
+		</div>
+		<div id="Asia" onclick="asiaT()">
+			Asia
+		</div>
+		<div id="Australia" onclick="australiaT()">
+			Australia
+		</div>
+		<div id="smallT">
+			<ul>
+				<li onclick="americaT()" id="americaH">America</li>
+				<li onclick="europeT()" id="europeH">Europe</li>
+				<li onclick="africaT()" id="africaH">Africa</li>
+				<li onclick="asiaT()" id="asiaH">Asia</li>
+				<li onclick="australiaT()" id="australiaH">Australia</li>
+				<li style="width:105%"></li>
+			</ul>
+		</div>
+		<div>
+		<img src="up.png" onclick="scrollup()" id="up"></img>
+		<table id="americaT" cellspacing="0">
+			<tr>
+				<td><p><h2>Argentina</h2>
+					Prosthesis Argentina S.A.</br>
+					Av. Belgrano 1477</br>
+					CP 1093 Buenos Aires</br>
+					Argentina</br>
+					Phone +54 11 5032-8201</br>
+					E-Mail atencionclientes@ottobock.com.ar</br>
+					Internet www.Prosthesis.com.ar</p>
+				</td>
+				<td><p><h2>Brazil</h2>
+					Prosthesis do Brasil Técnica Ortopédica Ltda</br>
+					Alameda Maria Tereza 4036</br>
+					Bairro Dois Córregos</br>
+					13278-181 – Valinhos SP.</br>
+					Brazil</br>
+					Phone +55-19-3729-3500</br>
+					Fax +55-19-3269-6061</br>
+					E-Mail Prosthesis@Prosthesis.com.br</br>
+					Internet www.Prosthesis.com.br</br></p>
+				</td>
+			</tr>
+			<tr>
+				<td><p><h2>Canada</h2>
+					Prosthesis Healthcare Canada</br>
+					5470 Harvester Road</br>
+					Burlington, Ontario L7L 5N5</br>
+					CA-Canada</br>
+					Phone +1 800 665 3327</br>
+					Fax +1 800 463 3659</br>
+					E-Mail CACustomerService@Prosthesis.com</br>
+					Internet www.Prosthesis.ca</br></p>
+				</td>
+				<td><p><h2>Chile</h2>
+					Prosthesis Chile S.p.A.</br>
+					Manuel Montt 901</br>
+					Providencia – Santiago</br>
+					Chile</br>
+					Phone +56-2-9202213</br>
+					Fax +56-2-9202197</br>
+					E-Mail atencionclientes@Prosthesis.com.ar</br>
+					Internet www.Prosthesis.com.ar</br></p>
+				</td>
+			</tr>
+		</table>
+		<table id="europeT" cellspacing="0">
+			<tr>
+				<td><p><h2>Germany</h2>
+					Prosthesisk HealthCare Deutschland GmbH</br>
+					Max-Näder-Straße 15</br>
+					D-37115 Duderstadt</br>
+					Germany</br>
+					Phone +49 5527 848-0</br>
+					Fax +49 5527 848-1414</br>
+					e-mail healthcare@Prosthesis.de</br>
+					Internet www.Prosthesis.de</p></td>
+				<td><p><h2>Austria</h2>
+					Prosthesis Healthcare Products GmbH</br>
+					Brehmstraße 16</br>
+					1110 Wien</br>
+					Austria</br>
+					Phone +43 1 5233786</br> 
+					Fax +43 1 5232264</br>
+					Internet www.Prosthesis.at</br></p></td>
+			</tr>
+			<tr>
+				<td><p><h2>Benelux</h2>
+					Prosthesis Benelux B.V.</br>
+					Mandenmaker 14</br>
+					NL–5253 RC Nieuwkuijk</br>
+					Netherlands</br>
+					Phone + 31 73 51 86 488</br>
+					Fax + 31 73 51 14 960</br>
+					e-mail info.benelux@Prosthesis.com</br>
+					Internet www.Prosthesis.nl</br></p></td>
+				<td><p><h2>Bosnia-Herzegovina</h2>
+					Prosthesis Adria Sarajewo D.O.O.</br>
+					Ramiza Salčina 85</br>
+					71000 Sarajevo</br>
+					Bosnien-Herzegovina</br>
+					Phone +387 33 255-405</br>
+					Fax +387 33 255-401</br>
+					E-Mail melisa.banda@Prosthesisadria.com.ba</br>
+					Internet www.Prosthesisadria.com.ba</br></p></td>
+			</tr>
+			<tr>
+				<td><p><h2>Bulgaria</h2>
+					Prosthesis Bulgaria Ltd.</br>
+					41 Tzar Boris III' Blvd.</br>
+					1612 Sofia</br>
+					Bulgaria</br>
+					Phone + 359 2 80 57 980</br>
+					Fax + 359 2 80 57 982</br>
+					e-mail info@Prosthesis.bg</br>
+					Internet www.Prosthesis.bg</br></p></td>
+				<td><p><h1></p></td>
+			</tr>
+			</table>
+		<table id="africaT" cellspacing="0">
+			<tr>
+				<td><p><h2>Egypt</h2>
+					Prosthesis Egypt S.A.E.</br>
+					28 Soliman Abaza St. Mohandessein</br>
+					ET–Egypt Mohandeseen – Giza</br>
+					Egypt</br>
+					Phone +20 2 37606818</br>
+					Fax +20 2 37605734</br>
+					E-Mail info@Prosthesis.com.eg</br>
+					Internet http://Prosthesis.com.eg</br></p></td>
+				<td><p><h2>Algeria</h2>
+					Prosthesis Algérie E.U.R.L.</br>
+					32, rue Ahcène outalab</br>
+					Coopérative les Mimosas</br>
+					DZ–Algérie Mackle-Ben Aknoun</br>
+					Algeria</br>
+					Phone +213 21 913863</br>
+					Fax +213 21 913863</br>
+					E-Mail information@Prosthesis.fr</br>
+					Internet www.Prosthesis.fr</br></p></td>
+			</tr>
+			<tr>
+				<td><p><h2>Morocco</h2>
+					Prosthesis Maroc</br>
+					186 route des Ouled Ziane</br>
+					Casablanca -Maroc</br>
+					Morocco</br>
+					Phone +212 5 22 28 04 30</br>
+					Fax +212 5 22 85 67 98</br>
+					E-Mail info@Prosthesis.ma</br></p></td>
+				<td><p><h2>South Africa</h2>
+					Prosthesis South Africa (Pty) Ltd</br>
+					Unit B/2</br>
+					Midrand Business Office Park</br>
+					563 Old Pretoria Main Road</br>
+					Midrand</br>
+					South Africa</br>
+					Phone +27 (0) 878062950</br>
+					Fax +27 (0) 867338035</br>
+					E-Mail betsie.vonwielligh@Prosthesis.co.za</br>
+					Internet www.Prosthesis.co.za</br></p></td>
+			</tr>
+		</table>
+		<table id="asiaT" cellspacing="0">
+			<tr>
+				<td><p><h2>China</h2>
+					Prosthesis (China) Industries Co., Ltd.</br>
+					3rd Floor, Building B36-B</br>
+					Universal Business Park</br>
+					10 Jiuxianqiao Road</br>
+					100015 Chaoyang District, Beijing</br>
+					P.R. China</br>
+					Phone +86 10 85986880</br>
+					Fax +86 10 85980040</br>
+					E-Mail news-service@Prosthesis.com.cn</br>
+					Internet www.Prosthesis.com.cn</br></p></td>
+				<td><p><h2>Hong Kong</h2>
+					Prosthesis Asia Pacific Ltd.</br>
+					Unit 1004, 10/F, Greenfield Tower, Concordia Plaza</br>
+					1 Science Museum Road, Tsim Sha Tsui</br>
+					Kowloon, Hong Kong</br>
+					China</br>
+					Phone +852 2598 9772</br>
+					Fax +852 2598 7886</br>
+					E-Mail info@Prosthesis.com.hk</br></p></td>
+			</tr>
+			<tr>
+				<td><p><h2>India</h2>
+					Prosthesis HealthCare India Pvt. Ltd.</br>
+					20th Floor, Express Towers</br>
+					Nariman Point, Mumbai 400 021 </br>
+					India</br>
+					Phone +91 22 2274 5500 / 5501 / 5502</br>
+					E-Mail information@indiaProsthesis.com</br>
+					Internet www.Prosthesis.in</br></p></td>
+				<td><p><h2>Indonesia</h2>
+					PT. Prosthesis Healthcare Indonesia</br>
+					Taman Tekno Blok F1/FG BSD</br>
+					Tangerang Selatan</br>
+					Banten 15314</br>
+					Indonesia</br>
+					Phone: +62 21 29666597</br>
+					Fax : +62 21 29666598</br>
+					Email : ahmad.risaldi@Prosthesis.com</br>
+					Website: www.Prosthesis.id</br></p></td>
+			</tr>
+			<tr>
+				<td><p><h2>Japan</h2>
+					Prosthesis Japan K. K.</br>
+					Yokogawa Building 8F</br>
+					4-4-44 Shibaura, Minato-ku Tokyo</br>
+					J– Tokyo 108-0023</br>
+					Japan</br>
+					Phone +81 3 3798-2111</br>
+					Fax +81 3 3798-2112</br>
+					E-Mail Prosthesis@Prosthesis.co.jp</br>
+					Internet www.Prosthesis.co.jp</br></p></td>
+				<td><p><h2>Korea</h2>
+					Prosthesis Korea HealthCare Inc.</br>
+					4F Agaworld Building</br>
+					1357-74, Seocho-dong</br>
+					Seocho-ku</br>
+					Seoul 06729</br>
+					Korea</br>
+					Phone +82-2-577-3831</br>
+					Fax +82-2-577-3828</br>
+					E-Mail info@Prosthesiskorea.com</br>
+					Internet www.Prosthesiskorea.com</br></p></td>
+			</tr>
+		</table>
+		<table id="australiaT" cellspacing="0">
+			<tr>
+				<td><p><h2>Australia</h2>
+					Prosthesis Australia Pty. Ltd.</br>
+					Suite 1.01, Century Corporate Centre</br>
+					62 Norwest Boulevarde</br>
+					2153 Baulkham Hills NSW</br>
+					Australia</br>
+					Phone +61 2 8818 2800</br>
+					Fax +61 2 8814 4500</br>
+					E-Mail healthcare@Prosthesis.com.au</br>
+					Internet www.Prosthesis.com.au</br></p></td>
+			</tr>
+		</table>
+
+		<footer>
+		<table>
+			<tr>
+				<th>About us</th>
+				<th>Sponsors & Associates</th>
+				<th>Prosthetics</th>
+				<th>Navigation</th>
+				<th>More</th>
+			</tr>
+			<tr>
+				<td>Copyright</td>
+				<td><a href="http://www.ottobockus.com/">Ottobockus</a></td>
+				<td>Head Prosthetics</td>
+				<td><a href="profile.html">Profile</td>
+				<td><a href="login.html">Login</a></td>
+			</tr>
+			<tr>
+				<td>Sitemap</td>
+				<td><a href="http://www.webmd.com/a-to-z-guides/using-prosthetic-limbs#1">Webmd</a></td>
+				<td>Full Body Prosthetics</td>
+				<td><a href="Prosthetics.html">Prosthesis</td>
+				<td><a href="register.html">Register</a></td>
+			</tr>
+			<tr>
+				<td>Privacy Policy</td>
+				<td><a href="http://www.amputee-coalition.org/">Amputee-coalition</a></td>
+				<td>Upper Limb Prosthetics</td>
+				<td><a href="gallery.html">Gallery</td>
+				<td>Locations</td>
+			</tr>
+			<tr>
+				<td>Terms of Use</td>
+				<td><a href="https://medlineplus.gov/ency/article/002286.htm">Medlineplus</a></td>
+				<td>Lower Limb Prosthetics</td>
+				<td><a href="information.html">Information</td>
+				<td>Phone: +433 231 5123</td>
+			</tr>
+			<tr>
+				<td><a href="contacts.html">Contact Us</td>
+				<td><a href="http://www.hangerclinic.com/Pages/default.aspx">Hangerclinic</a></td>
+				<td></td>
+				<td></td>
+				<td>prosthetic@gmail.com</td>
+			</tr>
+			<tr>
+				<td colspan="5">
+					<a href="https://www.facebook.com/groups/wpof01042012/"><img src="fb.png"></img></a>
+					<a href="https://twitter.com/search?q=%23Prosthesis"><img src="Twitter-256.png"></img></a>
+					<a href="https://www.youtube.com/watch?v=_qUPnnROxvY"><img src="YouTube.png"></img></a>
+					<a href="https://www.instagram.com/explore/tags/prostheticarm/"><img src="inst.png"></img></a>
+					
+				</td>
+			</tr>
+			<tr>
+				<td colspan="5" style="border-top:1px solid white;color:white;opacity:0.6;">Copyright by ProsthesisBG
+				</td>
+			</tr>
+		</table>
+		
+		
+	</footer>
+		</main>
+		</body>
+</html>

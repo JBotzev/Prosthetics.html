@@ -1,0 +1,373 @@
+<html>
+	<link href="prosthetics.css" rel="stylesheet" type="text/css">
+	<script src="prosthetics.js"></script>
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>ProsthesisBG</title>
+	</head>
+	
+	<body>
+		<header>
+			<nav>
+			<div style="margin-top:5px"><a id="title" href="ProstheticBG.html"><strong>ProsthesisBG</strong></a></div>
+			<strong><ul>
+				<li><a href="profile.html">PROFILE</a></li>
+				<li><a href="Prosthetics.html">PROSTHESIS</a></li>
+				<li><a href="gallery.html">STORIES</a></li>
+				<li><a href="information.html">INFORMATION</a></li>
+				<li  onmouseenter="droplista()" onmouseleave="droplistb()"><a href="contacts.html" id="cid">CONTACTS</a>
+					<div id="droplist">
+						<a href="locations.html">Our Team</a>
+						<a href="locations.html">Locations</a>
+						<a href="locations.html">Social Media</a>
+					</div>
+				</li>
+				<form action="/search" id="search-form" method="get" style="display: inline;">
+					<table style="margin-left:68px; margin-top:-2px;"cellspacing="0">
+							<tr>
+								<td class="search-box">
+									<input id="search-box" name="q" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" type="text" value="Search..." style="color:#808080; border:solid 1px #46C3E3; padding:2px;">
+								</td>
+								<td class="search-button"><input id="search-button" type="submit" value="Search" style="padding:2px; background-color:#46C3E3;border:1px solid #46C3E3; margin-left:-2px;cursor:pointer;width:70px">
+								</td>
+							</tr>
+					</table>
+				</form>
+			</ul></strong>
+		</nav>
+		<div id="back" onclick="back()">
+				<p style="margin-top:10px;">Back To Avatar</p>
+			</div>
+		</header>
+		
+		<main>
+			<div id="bg"></div>
+			<table id="bodyinfo" cellspacing="0">
+				<tr>
+					<th colspan="2" style="text-align:center">Choose Limb</th>
+				</tr>
+				<tr>
+					<th>Limb:</th>
+					<td id="larminfo1" style="display:none">Right Arm</td>
+					<td id="headinfo1" style="display:none">Head</td>
+					<td id="rarminfo1" style="display:none">Left Arm</td>
+					<td id="body1info1" style="display:none">Body</td>
+					<td id="lleginfo1" style="display:none">Right Leg</td>
+					<td id="rleginfo1" style="display:none">Left Leg</td>
+					<td id="none1">None</td>
+				</tr>
+				<tr>
+					<th>Difficulty:</th>
+					<td id="larminfo2" style="display:none">Normal</td>
+					<td id="headinfo2" style="display:none">Dangerous</td>
+					<td id="rarminfo2" style="display:none">Normal</td>
+					<td id="body1info2" style="display:none">Hard</td>
+					<td id="lleginfo2" style="display:none">Easy</td>
+					<td id="rleginfo2" style="display:none">Easy</td>
+					<td id="none2">None</td>
+				</tr>
+				<tr>
+					<th>Operations:</th>
+					<td id="larminfo3" style="display:none">1,854,637</td>
+					<td id="headinfo3" style="display:none">10,492</td>
+					<td id="rarminfo3" style="display:none">2,293,133</td>
+					<td id="body1info3" style="display:none">15,213</td>
+					<td id="lleginfo3" style="display:none">604,123</td>
+					<td id="rleginfo3" style="display:none">840,419</td>
+					<td id="none3">None</td>
+				</tr>
+				<tr>
+					<th>Successful:</th>
+					<td id="larminfo4" style="display:none">92%</td>
+					<td id="headinfo4" style="display:none">60%</td>
+					<td id="rarminfo4" style="display:none">90%</td>
+					<td id="body1info4" style="display:none">81%</td>
+					<td id="lleginfo4" style="display:none">93%</td>
+					<td id="rleginfo4" style="display:none">98%</td>
+					<td id="none4">None</td>
+				</tr>
+			</table>
+			<center><table cellspacing="0" id="avtable">
+				<tr>
+					<td style="height:17vh"></td>
+					<td colspan="2" id="head" onmouseover="headx()" onmouseout="clearx()" onclick="shop1()"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td  style="height:30vh;width:33%" id="larm" onmouseover="larm()" onmouseout="clearx()" onclick="shop2()"></td>
+					<td colspan="2" style="width:30%" id="mainb" onmouseover="mainb()" onmouseout="clearx()" onclick="shop3()"></td>
+					<td id="rarm" onmouseover="rarm()" onmouseout="clearx()" onclick="shop4()"></td>
+				</tr>
+				<tr>
+					<td colspan="2" id="lleg" onmouseover="lleg()" onmouseout="clearx()" onclick="shop5()"></td>
+					<td colspan="2" id="rleg" onmouseover="rleg()" onmouseout="clearx()" onclick="shop6()"></td>
+				</tr>
+			</table>
+            </center>
+			<div style="width:70%; background-color:#006782; margin:auto;">
+				<table id="list" cellspacing="0">
+					<tr>
+						<th id="hrarm" colspan="2" style="height:70px;font-size:200%;">Right Arm Prostheses</th>
+						<th id="hlarm" colspan="2" style="height:70px;font-size:200%;display:none">Left Arm Prostheses</th>
+						<th id="hbody" colspan="2" style="height:70px;font-size:200%;display:none">Body Prostheses</th>
+						<th id="hrleg" colspan="2" style="height:70px;font-size:200%;display:none">Right Leg Prostheses</th>
+						<th id="hlleg" colspan="2" style="height:70px;font-size:200%;display:none">Left Leg Prostheses</th>
+					</tr>
+					<tr>
+						<td><img src="prosthetic.jpg"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Mechatronic A</h1>Strenght:Class A</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 8,599<sup>99</sup></div></p></td>
+						
+						<td><img src="изтеглен файл.jpg"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Mechatronic B</h1>Strenght:Class A</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 9,245<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="00356_robotic_arm_thumb.jpg"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>ST2000</h1>Strenght:Class B</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 7,869<sup>99</sup></div></p></td>
+						
+						<td><img src="armPic.jpg"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>OS Quarz</h1>Strenght:Class B</br>Speed: Class A</br>Comfort: Class B<div class="pricerarm">PRICE: 6,233<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="exii-hackberry-open-sourced-3d-printed-bionic-hand2.jpg"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>T Style</h1>Strenght:Class B</br>Speed: Class B</br>Comfort: Class A<div class="pricerarm">PRICE: 6,154<sup>99</sup></div></p></td>
+						
+						<td><img src="robot_arm.jpg"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>CHB A2</h1>Strenght:Class B</br>Speed: Class C</br>Comfort: Class B<div class="pricerarm">PRICE: 5,920<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="Future-in-bioengineering-robot_arm.jpg"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Medicine Pro</h1>Strenght:Class A</br>Speed: Class C</br>Comfort: Class B<div class="pricerarm">PRICE: 5,720<sup>99</sup></div></p></td>
+						
+						<td><img src="AnakinArm.jpg"><img src="gradec.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Anin SK</h1>Strenght:Class B</br>Speed: Class C</br>Comfort: Class C<div class="pricerarm">PRICE: 5,000<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="Robotic Arm.jpg"><img src="gradec.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>T1 WAC</h1>Strenght:Class C</br>Speed: Class A</br>Comfort: Class C<div class="pricerarm">PRICE: 4,550<sup>99</sup></div></p></td>
+						
+						<td><img src="images (1).jpg"><img src="gradec.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Robin</h1>Strenght:Class C</br>Speed: Class C</br>Comfort: Class B<div class="pricerarm">PRICE: 4,400<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<th id="btop"colspan="2" onclick="scrollup()">Back To Top</th>
+					</tr>
+				</table>
+				
+				<table id="list1" cellspacing="0">
+					<tr>
+						<th id="hhead1" colspan="2" style="height:70px;font-size:200%;">Head Prostheses</th>
+					</tr>
+					<tr>
+						<td><img src="r.jpg"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>HEAD</h1>Strenght:Class A</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 8,599<sup>99</sup></div></p></td>
+						
+						<td><img src="a.jpg"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Mechatronic B</h1>Strenght:Class A</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 9,245<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="z.jpg"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>ST2000</h1>Strenght:Class B</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 7,869<sup>99</sup></div></p></td>
+						
+						<td><img src="f.jpg"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>OS Quarz</h1>Strenght:Class B</br>Speed: Class A</br>Comfort: Class B<div class="pricerarm">PRICE: 6,233<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="s.png"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>T Style</h1>Strenght:Class B</br>Speed: Class B</br>Comfort: Class A<div class="pricerarm">PRICE: 6,154<sup>99</sup></div></p></td>
+						
+						<td><img src="d.png"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>CHB A2</h1>Strenght:Class B</br>Speed: Class C</br>Comfort: Class B<div class="pricerarm">PRICE: 5,920<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="f.png"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Medicine Pro</h1>Strenght:Class A</br>Speed: Class C</br>Comfort: Class B<div class="pricerarm">PRICE: 5,720<sup>99</sup></div></p></td>
+						
+						<td><img src="M35-SA-FRONT-GRAPHICS-2.jpg"><img src="gradec.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Anin SK</h1>Strenght:Class B</br>Speed: Class C</br>Comfort: Class C<div class="pricerarm">PRICE: 5,000<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<th id="btop"colspan="2" onclick="scrollup()">Back To Top</th>
+					</tr>
+				</table>
+				
+				
+				
+				<table id="list2" cellspacing="0">
+					<tr>
+						<th id="larm" colspan="2" style="height:70px;font-size:200%;">Left Arm Prostheses</th>
+					</tr>
+					<tr>
+						<td><img src="prosthetic.jpg"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Left</h1>Strenght:Class A</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 8,599<sup>99</sup></div></p></td>
+						
+						<td><img src="изтеглен файл.jpg"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Mechatronic B</h1>Strenght:Class A</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 9,245<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="00356_robotic_arm_thumb.jpg"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>ST2000</h1>Strenght:Class B</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 7,869<sup>99</sup></div></p></td>
+						
+						<td><img src="armPic.jpg"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>OS Quarz</h1>Strenght:Class B</br>Speed: Class A</br>Comfort: Class B<div class="pricerarm">PRICE: 6,233<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="exii-hackberry-open-sourced-3d-printed-bionic-hand2.jpg"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>T Style</h1>Strenght:Class B</br>Speed: Class B</br>Comfort: Class A<div class="pricerarm">PRICE: 6,154<sup>99</sup></div></p></td>
+						
+						<td><img src="robot_arm.jpg"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>CHB A2</h1>Strenght:Class B</br>Speed: Class C</br>Comfort: Class B<div class="pricerarm">PRICE: 5,920<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="Future-in-bioengineering-robot_arm.jpg"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Medicine Pro</h1>Strenght:Class A</br>Speed: Class C</br>Comfort: Class B<div class="pricerarm">PRICE: 5,720<sup>99</sup></div></p></td>
+						
+						<td><img src="AnakinArm.jpg"><img src="gradec.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Anin SK</h1>Strenght:Class B</br>Speed: Class C</br>Comfort: Class C<div class="pricerarm">PRICE: 5,000<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="Robotic Arm.jpg"><img src="gradec.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>T1 WAC</h1>Strenght:Class C</br>Speed: Class A</br>Comfort: Class C<div class="pricerarm">PRICE: 4,550<sup>99</sup></div></p></td>
+						
+						<td><img src="Fotolia_10937599_Subscription_Yearly_M2-1038x576.jpg"><img src="gradec.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Robin</h1>Strenght:Class C</br>Speed: Class C</br>Comfort: Class B<div class="pricerarm">PRICE: 4,400<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<th id="btop"colspan="2" onclick="scrollup()">Back To Top</th>
+					</tr>
+				</table>
+				
+				
+				
+				<table id="list3" cellspacing="0">
+					<tr>
+						<th id="hbody" colspan="2" style="height:70px;font-size:200%;">Body Prostheses</th>
+					</tr>
+					<tr>
+						<td><img src="200px-DaedricArmor.png"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Body</h1>Strenght:Class A</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 8,599<sup>99</sup></div></p></td>
+						
+						<td><img src="DragonscaleArmor.png"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Mechatronic B</h1>Strenght:Class A</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 9,245<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="Ebony_mail.png"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>ST2000</h1>Strenght:Class B</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 7,869<sup>99</sup></div></p></td>
+						
+						<td><img src="aa9e7c0e31b863f17fd5d5d6d4367a96.png"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>OS Quarz</h1>Strenght:Class B</br>Speed: Class A</br>Comfort: Class B<div class="pricerarm">PRICE: 6,233<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="200px-DwarvenArmoroftheKnight.png"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>T Style</h1>Strenght:Class B</br>Speed: Class B</br>Comfort: Class A<div class="pricerarm">PRICE: 6,154<sup>99</sup></div></p></td>
+						
+						<td><img src="200px-SteelPlateArmorofDestruction.png"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>CHB A2</h1>Strenght:Class B</br>Speed: Class C</br>Comfort: Class B<div class="pricerarm">PRICE: 5,920<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="General_tullius's_armor.png"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Medicine Pro</h1>Strenght:Class A</br>Speed: Class C</br>Comfort: Class B<div class="pricerarm">PRICE: 5,720<sup>99</sup></div></p></td>
+						
+						<td><img src="90250dfd4548aeb4bcbdb39f733c01cb.png"><img src="gradec.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Anin SK</h1>Strenght:Class B</br>Speed: Class C</br>Comfort: Class C<div class="pricerarm">PRICE: 5,000<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<th id="btop"colspan="2" onclick="scrollup()">Back To Top</th>
+					</tr>
+				</table>
+				
+				<table id="list4" cellspacing="0">
+					<tr>
+						<th id="hrleg" colspan="2" style="height:70px;font-size:200%;">Right Leg Prostheses</th>
+					</tr>
+					<tr>
+						<td><img src="images (5).jpg"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Right leg</h1>Strenght:Class A</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 8,599<sup>99</sup></div></p></td>
+						
+						<td><img src="images (3).jpg"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Mechatronic B</h1>Strenght:Class A</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 9,245<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="MIT_MediaLab_BioMech_940x770-0016.jpg"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>ST2000</h1>Strenght:Class B</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 7,869<sup>99</sup></div></p></td>
+						
+						<td><img src="running_system_1_1_teaser_fallback.jpg"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>OS Quarz</h1>Strenght:Class B</br>Speed: Class A</br>Comfort: Class B<div class="pricerarm">PRICE: 6,233<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="running_system_1_1_teaser_fallback.jpg"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>T Style</h1>Strenght:Class B</br>Speed: Class B</br>Comfort: Class A<div class="pricerarm">PRICE: 6,154<sup>99</sup></div></p></td>
+						
+						<td><img src="prosthesis_transfemoral_01.jpg"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>CHB A2</h1>Strenght:Class B</br>Speed: Class C</br>Comfort: Class B<div class="pricerarm">PRICE: 5,920<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="32405_2_73292_169-4c_wb_1_1_teaser_onecolumn_border.jpg"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Medicine Pro</h1>Strenght:Class A</br>Speed: Class C</br>Comfort: Class B<div class="pricerarm">PRICE: 5,720<sup>99</sup></div></p></td>
+						
+						<td><img src="above-knee-prosthesis-250x250.jpg"><img src="gradec.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Anin SK</h1>Strenght:Class B</br>Speed: Class C</br>Comfort: Class C<div class="pricerarm">PRICE: 5,000<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="1031775.jpg"><img src="gradec.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>T1 WAC</h1>Strenght:Class C</br>Speed: Class A</br>Comfort: Class C<div class="pricerarm">PRICE: 4,550<sup>99</sup></div></p></td>
+						
+						<td><img src="images (2).jpg"><img src="gradec.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Robin</h1>Strenght:Class C</br>Speed: Class C</br>Comfort: Class B<div class="pricerarm">PRICE: 4,400<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<th id="btop"colspan="2" onclick="scrollup()">Back To Top</th>
+					</tr>
+				</table>
+				
+				<table id="list5" cellspacing="0">
+					<tr>
+						<th id="hlleg" colspan="2" style="height:70px;font-size:200%;">Left Leg Prostheses</th>
+					</tr>
+					<tr>
+						<td><img src="images (4).jpg"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Left leg</h1>Strenght:Class A</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 8,599<sup>99</sup></div></p></td>
+						
+						<td><img src="c-leg_system_1_1_teaser_fallback_retina.jpg"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Mechatronic B</h1>Strenght:Class A</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 9,245<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="c-leg4_limbbuild_11_4c.jpg"><img src="gradeapng.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>ST2000</h1>Strenght:Class B</br>Speed: Class A</br>Comfort: Class A<div class="pricerarm">PRICE: 7,869<sup>99</sup></div></p></td>
+						
+						<td><img src="MIT_MediaLab_BioMech_940x770-0018.jpg"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>OS Quarz</h1>Strenght:Class B</br>Speed: Class A</br>Comfort: Class B<div class="pricerarm">PRICE: 6,233<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="helix_hip_system_1_1_teaser_fallback_retina.jpg"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>T Style</h1>Strenght:Class B</br>Speed: Class B</br>Comfort: Class A<div class="pricerarm">PRICE: 6,154<sup>99</sup></div></p></td>
+						
+						<td><img src="x3_system_zoom_1_1_teaser_fallback.jpg"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>CHB A2</h1>Strenght:Class B</br>Speed: Class C</br>Comfort: Class B<div class="pricerarm">PRICE: 5,920<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="images (2).jpg"><img src="gradeb.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Medicine Pro</h1>Strenght:Class A</br>Speed: Class C</br>Comfort: Class B<div class="pricerarm">PRICE: 5,720<sup>99</sup></div></p></td>
+						
+						<td><img src="twin-city-prosthetic.jpg"><img src="gradec.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Anin SK</h1>Strenght:Class B</br>Speed: Class C</br>Comfort: Class C<div class="pricerarm">PRICE: 5,000<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<td><img src="32405_2_73292_169-4c_wb_1_1_teaser_onecolumn_border.jpg"><img src="gradec.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>T1 WAC</h1>Strenght:Class C</br>Speed: Class A</br>Comfort: Class C<div class="pricerarm">PRICE: 4,550<sup>99</sup></div></p></td>
+						
+						<td><img src="4.Ottobock-RunningLegRSxxx.jpg"><img src="gradec.png" style="position:relative;width:30%;vertical-align:top;"><p><h1>Robin</h1>Strenght:Class C</br>Speed: Class C</br>Comfort: Class B<div class="pricerarm">PRICE: 4,400<sup>99</sup></div></p></td>
+					</tr>
+					<tr>
+						<th id="btop"colspan="2" onclick="scrollup()">Back To Top</th>
+					</tr>
+				</table>
+			</div>
+			<center><img src="body.png" id="avatar"></img></center>
+		</main>
+		<footer id="footer">
+		<table>
+			<tr>
+				<th>About us</th>
+				<th>Sponsors & Associates</th>
+				<th>Prosthetics</th>
+				<th>Navigation</th>
+				<th>More</th>
+			</tr>
+			<tr>
+				<td>Copyright</td>
+				<td><a href="http://www.ottobockus.com/">Ottobockus</a></td>
+				<td>Head Prosthetics</td>
+				<td><a href="profile.html">Profile</td>
+				<td><a href="login.html">Login</a></td>
+			</tr>
+			<tr>
+				<td>Sitemap</td>
+				<td><a href="http://www.webmd.com/a-to-z-guides/using-prosthetic-limbs#1">Webmd</a></td>
+				<td>Full Body Prosthetics</td>
+				<td><a href="Prosthetics.html">Prosthesis</td>
+				<td><a href="register.html">Register</a></td>
+			</tr>
+			<tr>
+				<td>Privacy Policy</td>
+				<td><a href="http://www.amputee-coalition.org/">Amputee-coalition</a></td>
+				<td>Upper Limb Prosthetics</td>
+				<td><a href="gallery.html">Gallery</td>
+				<td><a href="locations.html">Locations</a></td>
+			</tr>
+			<tr>
+				<td>Terms of Use</td>
+				<td><a href="https://medlineplus.gov/ency/article/002286.htm">Medlineplus</a></td>
+				<td>Lower Limb Prosthetics</td>
+				<td><a href="information.html">Information</td>
+				<td>Phone: +433 231 5123</td>
+			</tr>
+			<tr>
+				<td><a href="contacts.html">Contact Us</td>
+				<td><a href="http://www.hangerclinic.com/Pages/default.aspx">Hangerclinic</a></td>
+				<td></td>
+				<td></td>
+				<td>prosthetic@gmail.com</td>
+			</tr>
+			<tr>
+				<td colspan="5">
+					<a href="https://www.facebook.com/groups/wpof01042012/"><img src="fb.png"></img></a>
+					<a href="https://twitter.com/search?q=%23Prosthesis"><img src="Twitter-256.png"></img></a>
+					<a href="https://www.youtube.com/watch?v=_qUPnnROxvY"><img src="YouTube.png"></img></a>
+					<a href="https://www.instagram.com/explore/tags/prostheticarm/"><img src="inst.png"></img></a>
+					
+				</td>
+			</tr>
+			<tr>
+				<td colspan="5" style="border-top:1px solid white;color:white;opacity:0.6;">Copyright by ProsthesisBG
+				</td>
+			</tr>
+		</table>
+	</footer>
+	</body>
+</html>

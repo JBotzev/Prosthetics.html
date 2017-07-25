@@ -1,0 +1,266 @@
+#title{
+	font-size:160%;
+	margin-top:3px;
+	color:#595A5C;
+	margin-left:38px;
+}
+#login{
+	font-size:110%;
+	position:absolute;
+	top:1%;
+	right:5%;
+	color:#595A5C; 
+}
+#log{
+	display: -webkit-box;
+	text-decoration: none;
+	list-style-type:none;
+}
+#droplist{
+	margin-top:5px;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+	visibility:hidden;
+	background-color:#006782;
+}
+#droplist a{
+	color:white;
+	padding: 12px 16px;
+    text-decoration:none;
+    display: block;
+    text-align:center;
+}
+#droplist a:hover{
+	background-color:#00ADD9;
+	border-bottom:0px;
+}
+div li a{
+	color:#595A5C;
+	padding:2px;
+}
+div li a:hover{
+	color:#00ADD9;
+	cursor:pointer;
+}
+header{
+	background-color:white;
+	width:100%;
+	position:fixed;
+	z-index:2;
+	top:0%;
+}
+#nex{
+	width:700px;
+	height:150px;
+}
+nav{
+	height:55px;
+	display: flex;
+/*{background: linear-gradient(to bottom,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 23%,rgba(137,195,235,1) 55%,rgba(213,235,251,1) 95%,rgba(213,235,251,1) 95%,rgba(213,235,251,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 ); /* IE6-9 */
+	
+	border-bottom-color:#808080;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+}
+nav ul{
+	margin-top:12px;
+	display: -webkit-box;
+	float: left;
+}
+a{
+	text-decoration: none;
+}
+			
+nav a{ 
+	color:#808080; 
+	text-align:center;
+	padding-bottom:6px;
+	padding-top:6px;
+	padding-left:12px;
+	padding-right:12px;
+}
+			
+nav ul li{
+	list-style-type:none;
+	margin-left:5px;
+	margin-right:5px;
+}
+			
+nav ul a:hover{
+	color:#00ADD9; 
+	border-bottom-color:#00ADD9;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+}
+body{
+	margin:auto;
+}
+main ul{
+	position:relative;
+	list-style-type:none;
+	z-index:100px
+}
+main ul li{
+	width:100%;
+}
+main{
+}
+#color{
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:1!;
+	background-color:rgba(0,0,0,0.5);
+	color:white;
+	font-size:200%;
+	text-align:center;
+	text-transform:capitalize;
+}
+#button{
+	padding:10px;
+	background-color:#006782;
+	border:solid white 1px;
+	font-size:80%;
+	width:125px;
+	border-radius:5px;
+}
+#button:hover{
+	background-color:#00ADD9;
+	cursor:pointer;
+}
+#search-button:hover{
+	background-color:#1CB6DD;
+}
+footer{
+	border-top:solid white 1px;
+	background-color:#006782;
+	position:relative;
+	bottom:0px;
+}
+footer table{
+	margin-top:20px;
+	width:100%;
+	color:rgba(255,255,255,0.5); 
+	text-align:center;
+	font-size:101%;
+}
+footer table a{
+	color:rgba(255,255,255,0.5); 
+}
+footer table a:hover{
+	color:rgba(255,255,255,0.8); 
+	cursor:pointer;
+}
+footer table td{
+	padding:1px;
+}
+footer table th{
+	color:white;
+	padding:6px;
+	width:20%;
+	font-size:120%;
+}
+footer img{
+	margin-top:1%;
+	width:4%;
+	opacity:0.5;
+	padding:2%;
+}
+footer img:hover{
+	opacity:0.8;
+	cursor:pointer;
+}
+#smth{
+    margin-top:450px !important;
+}
+#smth1{
+    margin-top:400px !important;
+	font-size:150%;
+}
+#wrapper_reg{
+    background-color:white;
+    color:#006782;
+	width:100%;
+	margin-top:180px;
+	padding-top:5%;
+}
+ 
+#reg{
+    position:relative;
+}
+ 
+#wrapper_reg form{
+	border-left:1px solid #808080;
+    width:30%;
+    margin-left:50%;
+    margin-bottom:10%;
+	max-width:379px;
+}
+ 
+#wrapper_reg form input{
+	margin-left:15%;
+    width:100%;
+	margin-bottom:20px;
+    font-size:1em;
+    padding:10px;
+    color:#006782;
+    border:1px solid #006782;
+    box-sizing: border-box;
+}
+ 
+#wrapper_reg form label{
+	margin-left:15%;
+    display:block;
+    margin-top: 15px;
+    margin-bottom:3px;
+}
+ 
+#buttons{
+	max-width:379px;
+    margin:auto;
+	margin-left:15%;
+	width:100%;
+}
+ 
+#buttons p{
+    display:inline-block;
+}
+ 
+#wrapper_reg button{
+	font-size:1em;
+    padding:10px 15px;
+    box-sizing: border-box;
+    border:1px solid white;
+	background-color:#006782;
+	color:white;
+    width:100%;
+}
+#wrapper_reg button:hover{
+	background-color:#00ADD9;
+}
+ 
+#wrapper_reg input[type = 'submit']{
+    padding:10px 15px;
+    box-sizing: border-box;
+    border:1px solid white;
+	background-color:#006782;
+	color:white;
+    margin-top: 15px;
+    font-size: 1em;
+}
+#wrapper_reg input[type = 'submit']:hover{
+	background-color:#00ADD9;
+}
+div table{
+	position:absolute;
+	width:30%;
+	left:10%
+}
+div table td{
+	width:50%;
+}
+div table img{
+	width:100%;
+}

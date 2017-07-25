@@ -1,0 +1,172 @@
+<html>
+	<link href="profile.css" rel="stylesheet" type="text/css">
+	<script src="prosthetics.js"></script>
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>ProsthesisBG</title>
+	</head>
+	
+	<body>
+		<header>
+			<nav>
+			<div style="margin-top:5px"><a id="title" href="ProstheticBG.html"><strong>ProsthesisBG</strong></a></div>
+			<strong><ul>
+				<li><a href="profile.html">PROFILE</a></li>
+				<li><a href="Prosthetics.html">PROSTHESIS</a></li>
+				<li><a href="gallery.html">STORIES</a></li>
+				<li><a href="information.html">INFORMATION</a></li>
+				<li  onmouseenter="droplista()" onmouseleave="droplistb()"><a href="contacts.html" id="cid">CONTACTS</a>
+					<div id="droplist">
+						<a href="locations.html">Our Team</a>
+						<a href="locations.html">Locations</a>
+						<a href="locations.html">Social Media</a>
+					</div>
+				</li>
+				<form action="/search" id="search-form" method="get" style="display: inline;">
+					<table style="margin-left:68px; margin-top:-2px;" cellspacing="0">
+						<tbody>
+							<tr>
+								<td class="search-box">
+									<input id="search-box" name="q" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" type="text" value="Search..." style="color:#808080; border:solid 1px #46C3E3; padding:2px;">
+								</td>
+								<td class="search-button"><input id="search-button" type="submit" value="Search" style="padding:2px; background-color:#46C3E3;border:1px solid #46C3E3; margin-left:-2px;cursor:pointer;width:70px">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</ul></strong>
+		</nav>
+		</header>
+		
+		<main>
+		<img src="galaxy-facebook-cover-11.jpg" style="width:100%;height:48%;"/>
+		<div></div>
+		<ul id="lmenu">
+			<li style="padding:3;"><img src="neil-degrasse-tyson-2.jpg" style="width:100%;padding:0;"/></li>
+			<li class="listit" onclick="home()"><img src="unnamed.png"/ style="width:12%;padding-right:15px;padding-left:7px; vertical-align:middle">Home</li>
+			<li class="listit" onclick="profile()"><img src="generic_male_profile.png"/ style="width:12%;padding-right:15px;padding-left:7px; vertical-align:middle">Profile</li>
+			<li class="listit" onclick="gallery()"><img src="galer.png"/ style="width:12%;padding-right:15px;padding-left:7px;vertical-align:middle">Gallery</li>
+			<li class="listit" onclick="favourites()"><img src="star-4-512.png"/ style="width:12%;padding-right:15px;padding-left:7px; vertical-align:middle">Favourites</li>
+			<li class="listit" onclick="incart()"><img src="shopping-cart-white-hi.png"/ style="width:12%;padding-right:15px;padding-left:7px; vertical-align:middle">In Cart</li>
+			<li class="listit" onclick="settings()"><img src="set.png"/ style="width:12%;padding-right:15px;padding-left:7px;vertical-align:middle">Settings</li>
+			<li class="listit" onclick="logout()"><img src="logout-512.png"/ style="width:12%;padding-right:15px;padding-left:7px; vertical-align:middle">Logout</li>
+		</ul>
+			<div id="subnav">
+				<ul>
+					<li onclick="profile()">About Me</li>
+					<li onclick="mystory()">My Story</li>
+					<li>More</li>
+				</ul>
+			</div>
+			<div id="divtable">
+				<table id="bt" style="padding:10px">
+					<tr>
+						<td style="border-right:1px solid #006782;"><h2>Who am I ?</h2>Neil deGrasse Tyson (born October 5, 1958) is an American astrophysicist, cosmologist, author, and science communicator. Since 1996, he has been the Frederick P. Rose Director of the Hayden Planetarium at the Rose Center for Earth and Space in New York City.</td>
+						<td>
+							<table id="st" cellspacing="0">
+								<tr>
+									<th style="padding-bottom:15px;font-size:25px;text-align:center"colspan="2">Personal information</th>
+								</tr>
+								<tr>
+									<th>Name:</th>
+									<td>Neil</td>
+								</tr>
+								<tr>
+									<th>Age:</th>
+									<td>58</td>
+								</tr>
+								<tr>
+									<th>Gender:</th>
+									<td>Male</td>
+								</tr>
+								<tr>
+									<th>Health Condition:</th>
+									<td>Still Alive</td>
+								</tr>
+								<tr>
+									<th>Successful rate:</th>
+									<td>200% #GOD</td>
+								</tr>
+							</table>
+			</table>
+			<table id="btgallery" style="padding:10px">
+					<tr>
+						<td  style="background-image:url('ars.jpg');background-size:100% 100%" onmouseover="infodiv()"onmouseout="infodiva()"><div id="infodiv" style="visibility:visible;background-color:black;width:100%;color:white;padding:0px">Date added:25.02.2005</div></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					</table>
+			</div>
+			<footer>
+		<table>
+			<tr>
+				<th>About us</th>
+				<th>Sponsors & Associates</th>
+				<th>Prosthetics</th>
+				<th>Navigation</th>
+				<th>More</th>
+			</tr>
+			<tr>
+				<td>Copyright</td>
+				<td><a href="http://www.ottobockus.com/">Ottobockus</a></td>
+				<td>Head Prosthetics</td>
+				<td><a href="profile.html">Profile</a></td>
+				<td><a href="login.html">Login</a></td>
+			</tr>
+			<tr>
+				<td>Sitemap</td>
+				<td><a href="http://www.webmd.com/a-to-z-guides/using-prosthetic-limbs#1">Webmd</a></td>
+				<td>Full Body Prosthetics</td>
+				<td><a href="Prosthetics.html">Prosthesis</td>
+				<td><a href="register.html">Register</a></td>
+			</tr>
+			<tr>
+				<td>Privacy Policy</td>
+				<td><a href="http://www.amputee-coalition.org/">Amputee-coalition</a></td>
+				<td>Upper Limb Prosthetics</td>
+				<td><a href="gallery.html">Gallery</td>
+				<td><a href="locations.html">Locations</a></td>
+			</tr>
+			<tr>
+				<td>Terms of Use</td>
+				<td><a href="https://medlineplus.gov/ency/article/002286.htm">Medlineplus</a></td>
+				<td>Lower Limb Prosthetics</td>
+				<td><a href="information.html">Information</td>
+				<td>Phone: +433 231 5123</td>
+			</tr>
+			<tr>
+				<td><a href="contacts.html">Contact Us</td>
+				<td><a href="http://www.hangerclinic.com/Pages/default.aspx">Hangerclinic</a></td>
+				<td></td>
+				<td></td>
+				<td>prosthetic@gmail.com</td>
+			</tr>
+			<tr>
+				<td colspan="5">
+					<a href="https://www.facebook.com/groups/wpof01042012/"><img src="fb.png"></img></a>
+					<a href="https://twitter.com/search?q=%23Prosthesis"><img src="Twitter-256.png"></img></a>
+					<a href="https://www.youtube.com/watch?v=_qUPnnROxvY"><img src="YouTube.png"></img></a>
+					<a href="https://www.instagram.com/explore/tags/prostheticarm/"><img src="inst.png"></img></a>
+					
+				</td>
+			</tr>
+			<tr>
+				<td colspan="5" style="border-top:1px solid white;color:white;opacity:0.6;">Copyright by ProsthesisBG
+				</td>
+			</tr>
+		</table>
+		
+		
+	</footer>
+		</main>
+	</body>
+</html>
