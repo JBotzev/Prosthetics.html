@@ -43,7 +43,7 @@ function infodiva(){
 //PROSTHETICS TAB
 function headx(){
 	cleara();
-	document.getElementById('avatar').src="head.png";
+	document.getElementById('avatar').src="Pictures/head.png";
 	document.getElementById('headinfo1').style="display:block";
 	document.getElementById('headinfo2').style="display:block";
 	document.getElementById('headinfo3').style="display:block";
@@ -51,7 +51,7 @@ function headx(){
 }
 function larm(){
 	cleara();
-	document.getElementById('avatar').src="larm.png";
+	document.getElementById('avatar').src="Pictures/larm.png";
 	document.getElementById('larminfo1').style="display:block";
 	document.getElementById('larminfo2').style="display:block";
 	document.getElementById('larminfo3').style="display:block";
@@ -59,7 +59,7 @@ function larm(){
 }
 function mainb(){
 	cleara();
-	document.getElementById('avatar').src="mainb.png";
+	document.getElementById('avatar').src="Pictures/mainb.png";
 	document.getElementById('body1info1').style="display:block";
 	document.getElementById('body1info2').style="display:block";
 	document.getElementById('body1info3').style="display:block";
@@ -67,7 +67,7 @@ function mainb(){
 }
 function rarm(){
 	cleara();
-	document.getElementById('avatar').src="rarm.png";
+	document.getElementById('avatar').src="Pictures/rarm.png";
 	document.getElementById('rarminfo1').style="display:block";
 	document.getElementById('rarminfo2').style="display:block";
 	document.getElementById('rarminfo3').style="display:block";
@@ -75,7 +75,7 @@ function rarm(){
 }
 function lleg(){
 	cleara();
-	document.getElementById('avatar').src="lleg.png";
+	document.getElementById('avatar').src="Pictures/lleg.png";
 	document.getElementById('lleginfo1').style="display:block";
 	document.getElementById('lleginfo2').style="display:block";
 	document.getElementById('lleginfo3').style="display:block";
@@ -83,7 +83,7 @@ function lleg(){
 }
 function rleg(){
 	cleara();
-	document.getElementById('avatar').src="rleg.png";
+	document.getElementById('avatar').src="Pictures/rleg.png";
 	document.getElementById('rleginfo1').style="display:block";
 	document.getElementById('rleginfo2').style="display:block";
 	document.getElementById('rleginfo3').style="display:block";
@@ -96,7 +96,7 @@ function cleara(){
 	document.getElementById('none4').style="display:none";
 }
 function clearx(){
-	document.getElementById('avatar').src="body.png";
+	document.getElementById('avatar').src="Pictures/body.png";
 	document.getElementById('headinfo1').style="display:none";
 	document.getElementById('headinfo2').style="display:none";
 	document.getElementById('headinfo3').style="display:none";
